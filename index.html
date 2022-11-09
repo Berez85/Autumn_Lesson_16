@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<a href="" class="header__logo">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+					<nav class="header__navigation navigation">
+						<ul class="navigation__list">
+							<li class="navigation__item"><a class="navigation__link" href="">About Us</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="">Courses</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="">Events</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="">Blog</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="">Contacts</a></li>
+						</ul>
+					</nav>
+					<div class="header__actions actions">
+						<a class="actions__button button" href="#"><span>Get consultation</span></a>
+						<a class="actions__register" href="#">Log in / Register</a>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<div class="main__contact-form contact-form">
+					<div class="contact-form__container">
+						<div class="contact-form__pictures">
+							<img class="contact-form__image" src="img/illustration.svg" alt="photo">
+						</div>
+						<div class="contact-form__body">
+							<h6 class="contact-form__subtitle">Any questions?</h6>
+							<h1 class="contact-form__title">Drop us a line</h1>
+							<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact-form__form">
+								<div class="contact-form__items">
+									<div class="contact-form__aitem">
+										<label for="name" class="contact-form__label">First Name*</label>
+										<input id="name" class="contact-form__ainput" required placeholder="Your first name" name="username" value="" type="text">
+									</div>
+									<div class="contact-form__aitem">
+										<label for="namelast" class="contact-form__label">Last Name*</label>
+										<input id="namelast" class="contact-form__ainput" required placeholder="Your last name" name="username" value="" type="text">
+									</div>
+									<div class="contact-form__aitem">
+										<label for="email" class="contact-form__label">Email*</label>
+										<input id="email" class="contact-form__ainput" required placeholder="Your working email" name="useremail" value="" type="email">
+									</div>
+									<div class="contact-form__aitem">
+										<label for="tel" class="contact-form__label">Phone</label>
+										<input id="tel" class="contact-form__ainput" placeholder="Your phone number" name="userphone" value="" type="tel">
+									</div>
+								</div>
+								<div class="contact-form__textarea-item-a">
+									<label for="text-a" class="contact-form__label">Message*</label>
+									<textarea id="text-a" class="contact-form__textarea" required name="text-a">Your message</textarea>
+								</div>
+								<div class="contact-form__checkbox checkbox">
+									<input id="car" autocomplete="off" type="checkbox" value="yes" name="car" class="checkbox__input">
+									<label for="car" class="checkbox__label"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+									<div class="contact-form__button">
+										<button type="submit" class="contact-form__btn button button_contact-form"><span>Send message</span></button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="contact-form__rectangle rectangle">
+						<div class="rectangle__container">
+							<div class="rectangle__body">
+								<h1 class="rectangle__title">Summary</h1>
+								<h2 class="rectangle__subtitle">Estimate Shipping and Tax</h2>
+								<p class="rectangle__text">Enter your destination to get a shipping <br> estimate.</p>
+								<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="rectangle__form">
+									<div class="rectangle__items">
+										<div class="rectangle__item">
+											<h3 class="rectangle__sub-title">Country</h3>
+											<select class="rectangle__select" name="select" id="#2">
+												<option value="">Ukraine</option>
+												<option value="">Austraria</option>
+												<option value="">United States</option>
+												<option value="">Canada</option>
+												<option value="">United Kingdom</option>
+											</select>
+										</div>
+										<div class="rectangle__item">
+											<h3 class="rectangle__sub-title">State/Province</h3>
+											<input class="rectangle__input" autocomplete="off" required placeholder="" name="username" value="" type="text">
+										</div>
+										<div class="rectangle__item">
+											<h3 class="rectangle__sub-title">Zip/Postal Code</h3>
+											<input class="rectangle__input" autocomplete="off" required placeholder="" name="digi" value="" type="number">
+										</div>
+										<div class="rectangle__radio radio">
+											<h3 class="radio__sub-title">Standard Rate</h3>
+											<div class="radio__item">
+												<input id="color_1" type="radio" name="color" class="radio__input">
+												<label for="color_1" class="radio__label"> Price may vary depending on the item/destination. Shop Staff will contact you.</label>
+											</div>
+											<h3 class="radio__sub-title">Pickup from store</h3>
+											<div class="radio__item">
+
+												<input id="color_2" type="radio" name="color" class="radio__input">
+												<label for="color_2" class="radio__label">Street Adress City Address</label>
+											</div>
+										</div>
+										<h2 class="rectangle__subtitle">Apply Discount Code</h2>
+										<div class="rectangle__item">
+											<h3 class="rectangle__sub-title">Enter discount code</h3>
+											<input class="rectangle__input" autocomplete="off" required placeholder="Enter Discount code" name="code" value="" type="namber">
+										</div>
+									</div>
+									<div class="rectangle__btn">
+										<button type="submit" class="rectangle__button button batton_width"><span>Apply Discount</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="contact-form__checkout checkout">
+						<div class="checkout__container">
+							<div class="checkout__body">
+								<div class="checkout__title">
+									<h1 class="checkout__title-text">Checkout</h1>
+									<div class="checkout__button">
+										<a href="#" class="checkout__btn button button_border"><span>Sign In</span></a>
+									</div>
+								</div>
+								<h2 class="checkout__subtitle">Shipping Address</h2>
+								<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="checkout__form">
+									<div class="checkout__items">
+										<div class="checkout__itm">
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">Email Address *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="useremail" value="" type="email">
+											</div>
+											<p class="checkout__text">You can create an account after checkout.</p>
+											<div class="checkout__border"></div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">First Name *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="username" value="" type="text">
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">Last Name *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="last-username" value="" type="text">
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">Company *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="name" value="" type="text">
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">Street Address *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="address" value="" type="text">
+											</div>
+											<div class="checkout__item">
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="address" value="" type="text">
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">City *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="city-name" value="" type="text">
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">Country</h3>
+												<select class="checkout__select select" name="select" id="#3">
+													<option value="">Ukraine</option>
+													<option value="">Austraria</option>
+													<option value="">United States</option>
+													<option value="">Canada</option>
+													<option value="">United Kingdom</option>
+												</select>
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">Zip/Postal Code *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="digi" value="" type="number">
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">State/Province *</h3>
+												<select class="checkout__select select" name="select" id="#4">
+													<option value="">Zakarpattia Oblast</option>
+													<option value="">Chernihiv Oblast</option>
+													<option value="">Chernivtsi Oblast</option>
+													<option value="">Dnipropetrovsk Oblast</option>
+													<option value="">Donetsk Oblast</option>
+												</select>
+											</div>
+											<div class="checkout__item">
+												<h3 class="checkout__sub-title">Phone Number *</h3>
+												<input class="checkout__input" autocomplete="off" required placeholder="" name="phone" value="" type="tel">
+											</div>
+										</div>
+										<div class="checkout-radio">
+											<h3 class="checkout__sub-title">Standard Rate</h3>
+											<div class="checkout-radio__item">
+												<input id="color_3" type="radio" name="color" class="checkout-radio__input">
+												<label for="color_3" class="checkout-radio__label"> Price may vary depending on the item/destination. Shop Staff will contact you.</label>
+											</div>
+											<h3 class="checkout__sub-title">Pickup from store</h3>
+											<div class="checkout-radio__item">
+												<input id="color_4" type="radio" name="color" class="checkout-radio__input">
+												<label for="color_4" class="checkout-radio__label">Street Adress City Address</label>
+											</div>
+										</div>
+									</div>
+									<div class="checkout__button">
+										<button type="submit" class="checkout__btn button button_border"><span>Next</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>
